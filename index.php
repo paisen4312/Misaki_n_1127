@@ -10,7 +10,7 @@
     <main>
         <div style = "margin-top: 50px;text-align: center;">
             <button style = "background: #dfdfdf; text-align: center; height : 50px; width : 300px; font-size: 20px;" name = "button">
-                集計
+                集計ボタン
             </button>
 
         </div>
