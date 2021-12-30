@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <?PHP
+    echo shell_exec(" ./.pyenv/versions/3.6.5/bin/python ./MODECON_SAPPORO/execute.py");
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.3">
     <title>水咲の集計ページ</title>
@@ -52,14 +55,25 @@
     <script src="js/lib/jquery-ui-1.10.3.custom.min.js"></script>
     <script>
         function buttonClick(){
-            $.ajax({
-            //   url: "./execute.py",
-            //  context: document.body
-            }).done(function() {
-                //ope.hasListUser()
-                alert('ボタン押したよ');;
-            });
-        }        
+            
+            // $.ajax({
+            //     url: './MODECON_SAPPORO/ope.py',
+            //     type: 'post',
+            //     data: '送信メッセージ'
+            // }).done(function(data){
+            //     console.log(data);
+            //     alert('ボタン押したよ');;
+            // }).fail(function(){
+            //     console.log('failed');
+            // });
+        };
+        //     $.ajax({
+        //       url: "./MODECON_SAPPORO/execute.py",
+        //      context: document.body
+        //     }).done(function() {
+        //         alert('ボタン押したよ');;
+        //     });
+        // }        
     </script>
 </body>
 </html>
