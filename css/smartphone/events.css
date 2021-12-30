@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+  width: 1200px;
+  margin:auto;
+}
+
+.events-slides{
+  position: relative
+}
+
+.slide{
+  display: block;
+  margin: 0 50px;
+}
+
+.slide p{
+  font-size: 150%;
+}
+
+img{
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}

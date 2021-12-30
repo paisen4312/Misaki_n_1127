@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.3">
     <title>水咲の集計ページ</title>
-    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/pc/common.css"/>
 </head>
 <body>    
     <main>
         <div style = "margin-top: 50px;text-align: center;">
-            <button style = "background: #dfdfdf; text-align: center; height : 250px; width : 600px; font-size: 150px; color: black; border-radius: 50px" name = "button">
-                集計
-            </button>
+            <input type="button" value="集計" onclick="buttonClick()" style = "background: #dfdfdf; text-align: center; height : 250px; width : 600px; font-size: 150px; color: black; border-radius: 50px">
+            <!-- <button style = "background: #dfdfdf; text-align: center; height : 250px; width : 600px; font-size: 150px; color: black; border-radius: 50px" name = "button"> -->
+                <!-- 集計 -->
+            <!-- </button> -->
             <p style = "text-align: center; font-size: 30px; color: black;" >
             実現できるかわからないんだけど、上の集計ボタンを押したら下にRT数の表が出るようなページを作ろうと思ってます。<br>
             このページは日に日にパワーアップさせるので、叱咤激励してください。
@@ -48,6 +49,17 @@
 
     </main>
     <script src="js/lib/jquery-3.4.1.min.js"></script>
-    <script src="js/lib/jquery-ui-1.10.3.custom.min.js"></script>  
+    <script src="js/lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script>
+        function buttonClick(){
+            $.ajax({
+            //   url: "./execute.py",
+            //  context: document.body
+            }).done(function() {
+                //ope.hasListUser()
+                alert('ボタン押したよ');;
+            });
+        }        
+    </script>
 </body>
 </html>

@@ -6,7 +6,7 @@ elems_dict = {}
 #リストを持っているユーザーのdictを作成
 def makeListUsers():
 
-    dict["Misaki_n_1127"] = "水咲"
+    dict["trickstar_mix"] = "水咲"
     pass
 
 #リストがない人たちのdictを作成
@@ -16,7 +16,7 @@ def makeUsers():
 
 #全員分のdictを作成
 def makeAllUsers():
-    all_dict["Misaki_n_1127"] = "水咲"
+    all_dict["trickstar_mix"] = "水咲"
     pass
 
 def makeElemsDict():

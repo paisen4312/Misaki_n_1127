@@ -1,0 +1,10 @@
+.main-content{
+  width:900px;
+  margin: 10px 0;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+main .main-content h1{
+  font-size: 50px;
+  margin-top: 300px;
+}

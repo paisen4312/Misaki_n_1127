@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body{
+  font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/*ヘッダーのレイアウト*/
+.menu{
+  z-index: 100;
+  display: block;
+  width: auto;
+  color: white;
+  height: 240px;
+  background-color: darkblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.contents {
+background-color: darkblue;
+width: auto;
+opacity: 0;
+}
+
+.contents a{
+  display: block;
+  justify-content: center;
+  font-size: 80px;
+  color: white;
+  text-decoration: none;
+  line-height: 200px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  background-color: darkblue;
+}
+
+.invisible{
+  display: none;
+}
+
+  /* .contents > a{
+    display: none;
+  } */
+  .contents .menu {
+    font-size: 40px;
+    cursor: pointer;
+    display: inline;
+    color: white;
+    line-height: 0px;
+  }
+  
+  .menu-contents {
+    color: white;
+    margin-left: 10px;
+    background-color: darkblue;
+  }
+
+  .menu-contents a{
+    margin: 50px 0;
+    font-size: 40px;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  }
+
+  #humberger {
+    position: relative;
+    height: 240px;
+    width: 240px;
+    left: 1000px;
+    box-sizing: border-box;
+    z-index: 200;
+  }
+  #humberger div {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    z-index: 200;
+  }
+  #humberger div:nth-of-type(1) {
+    top: 40px;
+  }
+  #humberger div:nth-of-type(2) {
+    top: 105px;
+  }
+  #humberger div:nth-of-type(3) {
+    bottom: 40px;
+  }
+
