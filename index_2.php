@@ -11,6 +11,9 @@
     <main>
         <div style = "margin-top: 50px;text-align: center;">
             <p style = "text-align: center; font-size: 30px; color: black;" >
+            <form action=".php" method="post">
+                <button type = "button" name = "calc">更新</button>
+            </form>
             実現できるかわからないんだけど、更新を押したら下にRT数の表が出るようなページを作ろうと思ってます。<br>
             このページは日に日にパワーアップさせるので、叱咤激励してください。
             </p>
@@ -21,7 +24,6 @@
                     <th bgcolor="#EE0000" width="250"><font color="#FFFFFF">合計pt</font></th>
                     <th bgcolor="#EE0000" width="250"><font color="#FFFFFF">RTpt</font></th>
                     </tr>
-                    <?PHP echo shell_exec(" ./.pyenv/versions/3.6.5/bin/python ./MODECON_SAPPORO/execute.py"); ?>
                 </table>
             </div>
             <br>
